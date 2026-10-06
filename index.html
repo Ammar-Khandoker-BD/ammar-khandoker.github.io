@@ -1,173 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Ammar Ali Khandoker - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Amber Ali Khandoker | Professional Portfolio</title>
+<meta name="description" content="Md. Amber Ali Khandoker — Store & Inventory Management, HR & Admin, Data Management, Digital Marketing, AI & Automation.">
+<meta name="theme-color" content="#07111f">
+<meta property="og:title" content="Md. Amber Ali Khandoker | Professional Portfolio">
+<meta property="og:description" content="Store & Inventory Management • HR & Admin • Data Management • Digital Marketing • AI & Automation">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ammarkhandoker.com.bd/">
+<link rel="icon" href="https://raw.githubusercontent.com/Ammar-Khandoker-BD/ammar-khandoker.github.io/main/passport.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07111f;--card:#0c1929;--card2:#0a1524;--line:#19304a;--text:#f3f7fb;--muted:#9bb0c6;--accent:#58dcff;--accent2:#8d83ff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 7%,rgba(88,220,255,.09),transparent 22%),radial-gradient(circle at 12% 15%,rgba(141,131,255,.08),transparent 20%),var(--bg);color:var(--text);font:15px/1.7 Inter,system-ui,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.76);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.05)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;font-family:"Space Grotesk"}.logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#06101c;font-weight:800}.brand strong{letter-spacing:.08em}.brand span{color:var(--accent)}.links{display:flex;gap:26px;font-size:13px;color:#bfd0e1}.links a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.hero{min-height:calc(100vh - 74px);display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:75px 0 95px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(88,220,255,.22);border-radius:999px;background:rgba(88,220,255,.05);color:#bdefff;font-size:11px;font-weight:700;letter-spacing:.11em}.dot{width:7px;height:7px;background:#63e7a2;border-radius:50%;box-shadow:0 0 12px #63e7a2}.hero h1{font:700 clamp(50px,7vw,88px)/.96 "Space Grotesk";letter-spacing:-.06em;margin:22px 0 18px}.hero h1 span{background:linear-gradient(90deg,var(--accent),#b4a8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.role{font:600 18px/1.45 "Space Grotesk";color:#d8e6f4;max-width:760px}.lead{color:var(--muted);font-size:16px;max-width:720px;margin-top:16px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:13px;transition:.2s}.primary{background:linear-gradient(135deg,var(--accent),#73b7ff);color:#06101b;border:none}.btn:hover{transform:translateY(-2px)}.stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.stat{padding-right:24px;margin-right:8px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat b{display:block;font:700 26px "Space Grotesk"}.stat small{color:var(--muted);font-size:11px}.photo-card{position:relative;padding:20px;border:1px solid rgba(88,220,255,.16);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.015));box-shadow:0 25px 80px rgba(0,0,0,.25)}.photo-card:before{content:"";position:absolute;inset:10% -8% -8% 16%;background:radial-gradient(circle,rgba(88,220,255,.16),transparent 64%);z-index:-1}.photo{aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:#101b2a}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo-note{display:flex;justify-content:space-between;gap:12px;padding:16px 3px 2px;font-size:11px}.photo-note span{color:var(--muted)}.verified{color:#bdefff}.verified b{color:#63e7a2}
+section{padding:100px 0}.head{display:flex;align-items:center;gap:16px;margin-bottom:40px}.num{color:var(--accent);font:700 12px "Space Grotesk";letter-spacing:.14em}.head h2{font:700 clamp(32px,4vw,52px)/1 "Space Grotesk";letter-spacing:-.04em;margin:0}.rule{flex:1;height:1px;background:var(--line)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.about .big{font:600 clamp(28px,4vw,48px)/1.12 "Space Grotesk";letter-spacing:-.04em;margin:0}.about em{font-style:normal;color:var(--accent)}.muted{color:var(--muted)}.info{border:1px solid var(--line);border-radius:20px;padding:18px 22px;background:rgba(255,255,255,.025)}.row{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.row:last-child{border-bottom:0}.row span{color:var(--muted)}.row strong{text-align:right}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:144px;top:0;bottom:0;width:1px;background:var(--line)}.item{display:grid;grid-template-columns:150px 1fr;gap:38px;position:relative;padding:0 0 48px}.item:before{content:"";position:absolute;left:140px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);box-shadow:0 0 0 7px rgba(88,220,255,.05)}.item.current:before{background:var(--accent);box-shadow:0 0 18px rgba(88,220,255,.55)}.meta{font-size:11px;color:var(--muted)}.content h3{font:700 22px "Space Grotesk";margin:0}.company{color:var(--accent);font-size:13px;margin:4px 0 12px}.content ul{margin:0;padding-left:18px;color:#bfd0df}.content li{margin:6px 0}.content li::marker{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:23px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));min-height:180px}.card .tag{color:var(--accent);font:700 11px "Space Grotesk";letter-spacing:.12em}.card h3{font:700 20px "Space Grotesk";margin:22px 0 7px}.card p{margin:0;color:var(--muted);font-size:13px}
+.credentials{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.cert{padding:25px;border-radius:22px;border:1px solid rgba(88,220,255,.24);background:linear-gradient(135deg,rgba(88,220,255,.08),rgba(141,131,255,.05))}.cert h3{font:700 22px "Space Grotesk";margin:8px 0}.cert small{color:#b9cde0}.stack{display:flex;flex-direction:column;gap:10px}.pill{padding:11px 14px;border-left:2px solid rgba(88,220,255,.45);background:rgba(255,255,255,.02);font-size:12px;color:#bfd0df}.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:15px}.edu .card{min-height:150px}
+.contact{display:grid;grid-template-columns:1fr .9fr;gap:30px;padding:34px;border:1px solid rgba(88,220,255,.18);border-radius:26px;background:linear-gradient(135deg,rgba(88,220,255,.06),rgba(141,131,255,.04))}.contact h2{font:700 clamp(34px,4vw,56px)/1 "Space Grotesk";letter-spacing:-.05em;margin:15px 0}.contact-links{display:flex;flex-direction:column}.contact-links a{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:12px}.contact-links span{color:var(--muted)}footer{padding:28px 0 45px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero,.about,.contact,.credentials{grid-template-columns:1fr}.hero{padding-top:55px}.photo-card{max-width:520px;margin:auto}.grid,.edu{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.wrap{width:min(var(--max),calc(100% - 28px))}.links{display:none}.menu{display:block}.hero h1{font-size:57px}.grid,.edu{grid-template-columns:1fr}.timeline:before{display:none}.item{display:block}.item:before{display:none}.meta{margin-bottom:7px}.stats{gap:18px}.stat{border-right:0;padding-right:0;margin-right:0}.actions{flex-direction:column;align-items:flex-start}section{padding:78px 0}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Md. Amber Ali Khandoker","url":"https://ammarkhandoker.com.bd/","email":"mailto:contact@ammar.pro.bd","jobTitle":"Executive — Store Management","sameAs":["https://www.linkedin.com/in/mdamberalikhandoker"],"knowsAbout":["Inventory Management","HR & Admin","ERP","HRIS","MIS Reporting","Excel","Digital Marketing","AI & Automation"]}
+</script>
 </head>
 <body>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="#top"><div class="logo">AK</div><strong>AMMAR<span>.</span></strong></a>
+<nav class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
+<button class="menu" aria-label="Open menu">☰</button>
+</div></header>
 
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">Md. Ammar Ali Khandoker</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<main id="top">
+<section class="wrap hero reveal">
+<div>
+<div class="eyebrow"><span class="dot"></span> OPEN TO PROFESSIONAL OPPORTUNITIES</div>
+<h1>Md. Amber Ali <span>Khandoker</span></h1>
+<p class="role">Store & Inventory Management · HR & Admin · Digital Marketing · AI & Automation</p>
+<p class="lead">Results-driven professional with hands-on experience across inventory operations, HR administration, data management, digital marketing, ERP/MIS reporting and modern AI tools.</p>
+<div class="actions"><a class="btn primary" href="#contact">Let's Connect ↗</a><a class="btn" href="cv.html">View Professional CV ↓</a><a class="btn" href="https://www.linkedin.com/in/mdamberalikhandoker" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+<div class="stats"><div class="stat"><b>5+</b><small>Years Experience</small></div><div class="stat"><b>98%</b><small>Inventory Data Accuracy</small></div><div class="stat"><b>50+</b><small>Marketing Campaigns</small></div><div class="stat"><b>500+</b><small>Qualified Leads</small></div></div>
+</div>
+<div class="photo-card"><div class="photo"><img src="https://raw.githubusercontent.com/Ammar-Khandoker-BD/ammar-khandoker.github.io/main/passport.png" alt="Md. Amber Ali Khandoker professional portrait"></div><div class="photo-note"><span>Dhaka, Bangladesh</span><span class="verified"><b>✓</b> Government Verified Freelancer</span></div></div>
+</section>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Md. Ammar Ali Khandoker</h1>
-                <p class="subtitle">HR & ERP Specialist | AI Automation | Data Management Professional</p>
-                <a href="#contact" class="btn">Get in Touch</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/Passport Size.jpg" alt="Md. Ammar Ali Khandoker">
-            </div>
-        </div>
-    </section>
+<section id="about" class="wrap reveal">
+<div class="head"><span class="num">01</span><h2>About</h2><div class="rule"></div></div>
+<div class="about"><div><p class="big">I work where <em>operations, data, people and technology</em> meet.</p><p class="muted">My background combines store & inventory operations with HR & admin, ERP/MIS reporting, data entry, digital marketing and AI-driven productivity. I focus on accurate data, structured workflows and practical improvements that help teams move faster.</p></div>
+<div class="info"><div class="row"><span>Current role</span><strong>Executive — Store Management</strong></div><div class="row"><span>Company</span><strong>Step Media Limited</strong></div><div class="row"><span>Location</span><strong>Ashulia, Savar, Dhaka</strong></div><div class="row"><span>Freelancer</span><strong>Active & Verified</strong></div><div class="row"><span>Education</span><strong>BSS — Second Class (2026)</strong></div></div></div>
+</section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                     <img src="images/image_1737371101664.png" alt="Office Photo">
-                </div>
-                <div class="about-text">
-                    <p>Highly organized and detail-oriented professional with 4+ years of experience in computer operations, data entry, IT support and administrative support. Expertise in <strong>Enterprise Resource Planning (ERP)</strong> and <strong>Human Resource Information Systems (HRIS)</strong>, ensuring seamless management of organizational data and workflows.</p>
-                    <p>In addition to my core administrative and data management skills, I am proficient in leveraging modern technology to drive efficiency. My skills include <strong>AI, Prompt Engineering, and MIS</strong>, which I use to automate tasks, analyze data more effectively, and generate valuable insights. I am also skilled in WordPress, Graphics Design (Canva), and Video Editing, allowing me to create engaging digital content and communication materials.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="experience" class="wrap reveal">
+<div class="head"><span class="num">02</span><h2>Experience</h2><div class="rule"></div></div>
+<div class="timeline">
+<article class="item current"><div class="meta">Jan 2025 — Present<br>Dhaka · On-site</div><div class="content"><h3>Executive — Store Management</h3><div class="company">Step Media Limited</div><ul><li>Maintained inventory records with 98% data accuracy and reduced stock discrepancy by 30%.</li><li>Reduced stock-out incidents by 40% through proactive monitoring and supplier replenishment coordination.</li><li>Generated weekly MIS reports that improved management decision-making speed by 25%.</li><li>Streamlined store documentation and reduced packing-list preparation time by 20%.</li></ul></div></article>
+<article class="item"><div class="meta">Jan 2021 — Present<br>Remote</div><div class="content"><h3>Digital Marketing Specialist</h3><div class="company">SproutGigs</div><ul><li>Delivered 50+ digital marketing campaigns across SEO, Google Ads and Meta Ads with an average 35% reach increase.</li><li>Grew client social accounts by an average 40% in followers and 60% in engagement.</li><li>Generated 500+ qualified leads using targeted lead generation strategies.</li><li>Produced 100+ marketing creatives using Canva and Freepik.</li></ul></div></article>
+<article class="item"><div class="meta">Sep 2023 — Nov 2024<br>Narsingdi · On-site</div><div class="content"><h3>Junior Executive — HR & Admin</h3><div class="company">PRAN-RFL Group (RFL Electronics Limited)</div><ul><li>Onboarded 100+ new hires and reduced onboarding documentation errors by 95%.</li><li>Maintained 500+ employee records in HRIS and ERP with 99% accuracy.</li><li>Prepared monthly HR reports and attendance summaries, saving 5+ hours per week using optimized Excel templates.</li><li>Supported a workforce of 200+ employees across departments.</li></ul></div></article>
+<article class="item"><div class="meta">Aug 2022 — Jul 2023<br>Narsingdi · On-site</div><div class="content"><h3>Data Entry Operator — Finishing & Production</h3><div class="company">Chorka Textile Limited</div><ul><li>Processed 200+ export packing lists and commercial invoices monthly with 99.5% accuracy.</li><li>Reduced data entry errors by 45% using a double-check verification system.</li><li>Entered and maintained 1,000+ production records in ERP and coordinated 100% on-time data submission.</li></ul></div></article>
+<article class="item"><div class="meta">Apr 2021 — Jun 2022<br>Mymensingh · On-site</div><div class="content"><h3>Computer Operator — Finishing & Production</h3><div class="company">Mahdeen Group</div><ul><li>Managed daily production records with 98% accuracy.</li><li>Reduced report-generation time by 25% using reusable Excel templates.</li><li>Digitized and organized 1,000+ physical production files into a structured digital database.</li></ul></div></article>
+</div>
+</section>
 
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Executive (Store Management)</h3>
-                        <p class="company">Step Media Limited</p>
-                        <span class="date">(10/01/2025 to running)</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Junior Executive (HR & Admin)</h3>
-                        <p class="company">RFL Electronics Limited</p>
-                        <span class="date">(1.5 Years)</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Data Entry Operator (Finishing - Production)</h3>
-                        <p class="company">Chorka Apparels Limited</p>
-                        <span class="date">(0.8 Years)</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Computer Operator (Finishing- Production)</h3>
-                        <p class="company">Mahdeen Group</p>
-                        <span class="date">(1.1 Years)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="skills" class="wrap reveal">
+<div class="head"><span class="num">03</span><h2>Core Skills</h2><div class="rule"></div></div>
+<div class="grid">
+<div class="card"><div class="tag">01</div><h3>HR & Admin</h3><p>HRIS · ERP Software · Employee Onboarding · Attendance Management · HR Reporting</p></div>
+<div class="card"><div class="tag">02</div><h3>Data & Office</h3><p>MS Word · Excel · Outlook · PowerPoint · Data Entry · Database Management · MIS Reporting</p></div>
+<div class="card"><div class="tag">03</div><h3>Digital Marketing</h3><p>SEO · Google Ads · Meta Ads · Social Media Marketing · Lead Generation</p></div>
+<div class="card"><div class="tag">04</div><h3>Design & Content</h3><p>Canva · Freepik · WordPress · Video Editing · Graphic Design</p></div>
+<div class="card"><div class="tag">05</div><h3>Inventory</h3><p>Inventory Management · Export Packing List · Commercial Invoice · Stock Reconciliation</p></div>
+<div class="card"><div class="tag">06</div><h3>AI & Automation</h3><p>OpenAI Models · AI Agents · Prompt Engineering · Virtual Assistant</p></div>
+</div>
+</section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Core Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Enterprise Resource Planning (ERP)</li>
-                        <li>Human Resource Information System (HRIS)</li>
-                        <li>Artificial Intelligence & Prompt Engineering</li>
-                        <li>Database Management & MIS</li>
-                        <li>Graphics Design (Freepik, Canva)</li>
-                        <li>Professional Microsoft Office</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Professional & Management</h3>
-                    <ul>
-                        <li>Inventory & Store Management</li>
-                        <li>HR Management System</li>
-                        <li>Leadership & Teamwork</li>
-                        <li>Problem-Solving & Critical Thinking</li>
-                        <li>Data Entry System</li>
-                        <li>Time Management & Communication</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="credentials" class="wrap reveal">
+<div class="head"><span class="num">04</span><h2>Credentials</h2><div class="rule"></div></div>
+<div class="credentials">
+<div class="cert"><div class="num">VERIFIED CREDENTIAL</div><h3>Government Verified Freelancer — Digital Marketing</h3><small>ICT Division, Government of Bangladesh (DoICT) · Issued Jan 2026 · Valid until Jan 2029 · Status: Active & Verified</small></div>
+<div class="stack"><div class="pill">Deep Dive into OpenAI Models: Master o3, o4-mini & Beyond — Udemy</div><div class="pill">Computer Office Application for Business Development — BTEB</div><div class="pill">5-Day AI Agents Intensive Course with Google — Kaggle</div><div class="pill">Excel Essentials for Workplace Productivity — Passport to Earning Bangladesh</div></div>
+</div>
+<div class="edu">
+<div class="card"><div class="tag">EDUCATION</div><h3>Bachelor of Social Science (BSS)</h3><p>Kurigram Govt. College · National University · Second Class · 2026</p></div>
+<div class="card"><div class="tag">HSC</div><h3>Humanities</h3><p>Lalmonirhat Adarsha College · Dinajpur Board · GPA 3.67 / 5.00 · 2020</p></div>
+<div class="card"><div class="tag">SSC</div><h3>Science</h3><p>Purbo Balakandi Madrasah · Madrasah Board · GPA 3.39 / 5.00 · 2018</p></div>
+</div>
+</section>
 
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Bachelor of Social Science (BSS)</h3>
-                    <p>Kurigram Govt. College (National University)</p>
-                    <span>Result: Applied</span>
-                </div>
-                <div class="education-card">
-                    <h3>Higher Secondary Certificate (HSC)</h3>
-                    <p>Lalmonirhat Adarsha Collage (Humanities)</p>
-                    <span>Result: 3.67 out of 5.00</span>
-                </div>
-                <div class="education-card">
-                    <h3>Secondary School Certificate (SSC)</h3>
-                    <p>Purbo Balakandi Dakhil Madrasha (Science)</p>
-                    <span>Result: 3.39 out of 5.00</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'm always open to discussing new projects or opportunities.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <p>ammar.khandoker@outlook.com</p>
-                </div>
-                <div class="contact-item">
-                    <p>+8801716-861353</p>
-                </div>
-                <div class="contact-item">
-                    <p>Ashulia, Savar, Dhaka</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Md. Ammar Ali Khandoker. All rights reserved.</p>
-        </div>
-    </footer>
-
+<section id="contact" class="wrap reveal">
+<div class="contact"><div><div class="num">LET'S CONNECT</div><h2>Open to the right opportunity.</h2><p class="muted">For professional opportunities, freelance digital marketing work, inventory/data operations or collaboration, feel free to get in touch.</p></div>
+<div class="contact-links"><a href="mailto:contact@ammar.pro.bd"><span>Email</span><strong>contact@ammar.pro.bd ↗</strong></a><a href="tel:+8801716861353"><span>Phone</span><strong>+880 1716-861353 ↗</strong></a><a href="https://www.linkedin.com/in/mdamberalikhandoker" target="_blank" rel="noopener"><span>LinkedIn</span><strong>mdamberalikhandoker ↗</strong></a><a href="https://ammarkhandoker.com.bd/cv.html"><span>CV</span><strong>View professional CV ↗</strong></a></div></div>
+</section>
+</main>
+<footer class="wrap"><span>© <span id="y"></span> Md. Amber Ali Khandoker</span><span>Built for a professional personal brand · Bangladesh</span></footer>
+<script>
+const menu=document.querySelector('.menu'), links=document.querySelector('.links');
+menu?.addEventListener('click',()=>{links.style.display=links.style.display==='flex'?'':'flex';links.style.flexDirection='column';links.style.position='absolute';links.style.top='74px';links.style.right='14px';links.style.left='14px';links.style.padding='12px';links.style.background='rgba(7,17,31,.97)';links.style.border='1px solid var(--line)';links.style.borderRadius='16px'});
+document.getElementById('y').textContent=new Date().getFullYear();
+const obs=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.08});document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+</script>
 </body>
 </html>
